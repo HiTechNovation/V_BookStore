@@ -24,7 +24,7 @@ export default function Login() {
     };
 
     try {
-      const res = await axios.post("http://192.168.43.196:3000/user/login", userInfo);
+      const res = await axios.post("https://v-bookstore.onrender.com/user/login", userInfo);
 
       toast.success('Logged In Successfully !!');
 

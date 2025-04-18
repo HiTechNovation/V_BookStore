@@ -18,7 +18,7 @@ export const SignUp = () => {
       password: data.password,
     };
 
-    axios.post("http://192.168.43.196:3000/user/signup", userInfo)
+    axios.post("https://v-bookstore.onrender.com/user/signup", userInfo)
       .then((res) => {
         console.log(res.data);
         toast.success("Signup successful!");

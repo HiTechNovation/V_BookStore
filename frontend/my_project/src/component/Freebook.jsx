@@ -11,7 +11,7 @@ export const Freebook = () => {
   useEffect(() => {
     const getBook = async () => {
         try {
-            const res = await axios.get("http://192.168.43.196:3000/books");  // ✅ Fixed: Added res
+            const res = await axios.get("https://v-bookstore.onrender.com/books");  // ✅ Fixed: Added res
             console.log(res.data.filter((data) => data.category === "Free"));
             setBook(res.data.filter((data) => data.category === "Free"));
         } catch (error) {
