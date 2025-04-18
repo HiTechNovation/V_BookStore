@@ -29,7 +29,7 @@ export const Contact = () => {
                                 {...register("Name", { required: true })}
                                 type="text"
                                 placeholder="Enter Your Name..."
-                                className="w-full text-sm p-1 border-gray-300 rounded-md focus:outline-none dark:bg-gray-700 dark:border-gray-600"
+                                className="w-full text-sm p-1 mt-1 border-gray-300 rounded-md focus:outline-none dark:bg-gray-700 dark:border-gray-600"
                             />
                             {errors.Name && <span className="text-red-600 text-xs">This field is required*</span>}
                         </div>
@@ -41,7 +41,7 @@ export const Contact = () => {
                                 {...register("Email", { required: true })}
                                 type="email"
                                 placeholder="Enter Your Email..."
-                                className="w-full text-sm p-1 border-gray-300 rounded-md focus:outline-none dark:bg-gray-700 dark:border-gray-600"
+                                className="w-full text-sm p-1 mt-1 border-gray-300 rounded-md focus:outline-none dark:bg-gray-700 dark:border-gray-600"
                             />
                             {errors.Email && <span className="text-red-600 text-xs">This field is required*</span>}
                         </div>
@@ -52,7 +52,7 @@ export const Contact = () => {
                             <textarea
                                 {...register("Message", { required: true })}
                                 placeholder="Type your message here..."
-                                className="w-full p-1 text-sm border-gray-300 rounded-md focus:outline-none dark:bg-gray-700 dark:border-gray-600"
+                                className="w-full p-1 mt-1 text-sm border-gray-300 rounded-md focus:outline-none dark:bg-gray-700 dark:border-gray-600"
                             />
                             {errors.Message && <span className="text-red-600 text-xs">This field is required*</span>}
                         </div>
